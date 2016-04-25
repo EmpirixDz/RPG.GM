@@ -30,6 +30,8 @@ phy_fixed_rotation = true;
 image_speed = 0;
 img_spd= .3;
 spd = 2;
+scr_get_input();
+state = scr_move_state;
 </string>
           </argument>
         </arguments>
@@ -53,40 +55,7 @@ spd = 2;
           <argument>
             <kind>1</kind>
             <string>/// Player movements 
-
-var Up = keyboard_check(ord('W')) ;
-var Down = keyboard_check(ord('S'));
-var Right = keyboard_check(ord('D'));
-var Left = keyboard_check(ord('A'));
-//Move Right
-if (Right){
-phy_position_x += spd;
-sprite_index = spr_player_right;
-image_speed = img_spd; 
-}
-//Move Left
-if (Left){
-phy_position_x -= spd;
-sprite_index = spr_player_left;
-image_speed = img_spd;
-}
-//Move Up
-if (Up){
-phy_position_y -= spd;
-sprite_index = spr_player_back;
-image_speed = img_spd;
-}
-// Move Down
-if (Down){
-phy_position_y += spd;
-sprite_index = spr_player_face;
-image_speed = img_spd;
-}
-
-if (!Up and !Down and !Left and !Right){
-image_speed = 0;
-image_index = 0;
-}
+script_execute(state);
 </string>
           </argument>
         </arguments>
@@ -110,6 +79,32 @@ image_index = 0;
           <argument>
             <kind>1</kind>
             <string>/// Stops the playing from going through other objects
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Shadow
+draw_sprite(spr_player_shadow, image_index, x, y);
+draw_self();
+
 </string>
           </argument>
         </arguments>
