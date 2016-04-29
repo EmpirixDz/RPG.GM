@@ -7,22 +7,39 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>
-    <sprite>sprites\spr_player_face</sprite>
     <sprite>sprites\spr_wall</sprite>
-    <sprite>sprites\spr_player_back</sprite>
-    <sprite>sprites\spr_player_right</sprite>
-    <sprite>sprites\spr_player_left</sprite>
-    <sprite>sprites\spr_player_shadow</sprite>
-    <sprite>sprites\spr_slime</sprite>
+    <sprites name="Player">
+      <sprite>sprites\spr_player_back</sprite>
+      <sprite>sprites\spr_player_face</sprite>
+      <sprite>sprites\spr_player_right</sprite>
+      <sprite>sprites\spr_player_left</sprite>
+      <sprite>sprites\spr_player_shadow</sprite>
+      <sprite>sprites\spr_player_attackF</sprite>
+      <sprite>sprites\spr_player_attackB</sprite>
+      <sprite>sprites\spr_player_attackR</sprite>
+      <sprite>sprites\spr_player_attackL</sprite>
+    </sprites>
+    <sprite>sprites\spr_damage</sprite>
+    <sprites name="slime">
+      <sprite>sprites\spr_slime</sprite>
+      <sprite>sprites\spr_slime_death</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\scr_get_input.gml</script>
-    <script>scripts\scr_move_state.gml</script>
-    <script>scripts\scr_dash_state.gml</script>
+    <scripts name="player">
+      <script>scripts\scr_attack_state.gml</script>
+      <script>scripts\scr_move_state.gml</script>
+      <script>scripts\scr_dash_state.gml</script>
+      <script>scripts\scr_get_input.gml</script>
+    </scripts>
+    <scripts name="slime">
+      <script>scripts\scr_slime.gml</script>
+      <script>scripts\scr_slime_death.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
@@ -31,6 +48,7 @@
     <object>objects\obj_dash_effect</object>
     <object>objects\obj_slime</object>
     <object>objects\obj_life_forms</object>
+    <object>objects\obj_damage</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_test</room>

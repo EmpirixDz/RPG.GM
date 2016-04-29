@@ -26,8 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>///Move 15% towards the player
+if (instance_exists(obj_player)){
 x += (obj_player.x - x) *.15;
 y += (obj_player.y - y) *.15;
+}
 </string>
           </argument>
         </arguments>

@@ -5,6 +5,11 @@ if (Dash){
     state = scr_dash_state;
     alarm[0] = room_speed/12;
 }
+if (Attack){
+    image_index = 0;
+    state = scr_attack_state;
+    
+}
 
 //Get the player direction
 dir = point_direction(0, 0, xaxis, yaxis);

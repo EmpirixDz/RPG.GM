@@ -4,6 +4,7 @@ Down = keyboard_check(ord('S'));
 Right = keyboard_check(ord('D'));
 Left = keyboard_check(ord('A'));
 Dash = keyboard_check_pressed(vk_space);
+Attack = keyboard_check(ord('J'));
 //Get the axis
 xaxis = (Right - Left);
 yaxis = (Down - Up);
@@ -13,6 +14,7 @@ if (gamepad_is_connected(0)) {
     xaxis = gamepad_axis_value(0, gp_axislh);
     yaxis = gamepad_axis_value(0, gp_axislv);
     Dash = gamepad_button_check_pressed(0, gp_face2);
+    Attack = gamepad_button_check_pressed(0, gp_shoulderr);
  
 }
 
