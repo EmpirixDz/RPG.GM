@@ -6,7 +6,7 @@
   <vsnap>16</vsnap>
   <hsnap>16</hsnap>
   <isometric>0</isometric>
-  <speed>30</speed>
+  <speed>60</speed>
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
@@ -53,8 +53,8 @@
   <instances>
     <instance objName="obj_wall" x="0" y="0" name="inst_C3BF2A1A" locked="0" code="" scaleX="1" scaleY="11" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="32" y="0" name="inst_B614A6FA" locked="0" code="" scaleX="19" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="608" y="32" name="inst_C95C1A42" locked="0" code="" scaleX="1" scaleY="10" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="32" y="320" name="inst_5EE9547B" locked="0" code="" scaleX="18" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="608" y="0" name="inst_C95C1A42" locked="0" code="" scaleX="1" scaleY="11" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="0" y="320" name="inst_5EE9547B" locked="0" code="" scaleX="20.1290321350098" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="480" y="128" name="inst_0DF9980B" locked="0" code="" scaleX="-2" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="obj_player" x="352" y="160" name="inst_6F8834D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cam" x="64" y="64" name="inst_5C1388FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -63,6 +63,11 @@
     <instance objName="obj_wall" x="319" y="128" name="inst_102D5291" locked="0" code="" scaleX="0.0299999993294477" scaleY="3.96875" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="287" y="224" name="inst_86044CBE" locked="0" code="" scaleX="0.0299999993294477" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="223" y="130" name="inst_188EBB2B" locked="0" code="" scaleX="0.0645161271095276" scaleY="1.9375" colour="4294967295" rotation="0"/>
+    <instance objName="obj_slime" x="160" y="192" name="inst_309C20F3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_slime" x="336" y="304" name="inst_41BD581F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_slime" x="528" y="96" name="inst_72E2F9D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_slime" x="528" y="240" name="inst_1EC65F90" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_slime" x="544" y="160" name="inst_2D4720AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background1" x="32" y="32" w="32" h="32" xo="0" yo="0" id="10000178" name="inst_C83D2999" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
